@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace ExtensionExample.Extensions
 {
-    public static class RemoveAccentExtension
+    public static class OnlyLettersAndNumbersExtension
     {
-        public static string RemoveAccent(this string word)
+        public static string OnlyLettersAndNumbers(this string word)
         {
             Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
             var temp = Encoding.GetEncoding("iso-8859-7").GetBytes(word);

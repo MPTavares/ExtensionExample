@@ -10,9 +10,9 @@ namespace ExtensionExample
             string[] words = { "Name", "Ána", "Home", "afã", "Sun", "Socorram-me, subi no ônibus em Marrocos" };
             foreach (var word in words)
             {
-                string wordChanged = word.ToLower().RemoveAccent();
+                string wordChanged = word.ToLower().OnlyLettersAndNumbers();
 
-                bool isPalindrome = (wordChanged == wordChanged.Invertion());
+                bool isPalindrome = (wordChanged == wordChanged.ReverseString());
 
                 string option = isPalindrome ? "is" : "not is";
 

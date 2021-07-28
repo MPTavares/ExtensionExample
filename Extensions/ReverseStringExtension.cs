@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace ExtensionExample.Extensions
 {
-    public static class InvertionExtension
+    public static class ReverseStringExtension
     {
-        public static string Invertion (this string word)
+        public static string ReverseString (this string word)
         {
             word = String.Concat(word.Reverse());
             return word;
